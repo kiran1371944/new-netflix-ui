@@ -1,6 +1,9 @@
-import React,{useState,useEffect} from 'react'
-import bsUrl from '../bdomain'
+import React,{useState,useEffect} from 'react';
+import bsUrl from '../../bdomain';
 import './Banner.css';
+import { Icon } from 'react-icons-kit';
+import {playCircle} from 'react-icons-kit/fa/playCircle';
+import {info} from 'react-icons-kit/fa/info';
 
 function Banner({fetch}) {
 
@@ -32,6 +35,18 @@ function Banner({fetch}) {
         <h2 className='banner-description'>
           { truncate(movies?.overview,150)}
         </h2>
+
+        <div className="buttons">
+          <button className="play">
+            <Icon className='icon  ' icon={playCircle} />
+            <span>Play</span>
+          </button>
+          <button className="more">
+            <Icon className='icon' icon={info} />
+            <span>Info</span>
+          </button>
+        </div>
+
        </div>
 
       </div>

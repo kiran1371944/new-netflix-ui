@@ -1,0 +1,50 @@
+.bannerhead{
+    height: 100vh ;
+    color: white;
+    object-fit: contain;
+    margin-top: 0px;
+    
+}
+.banner-content{
+    margin-left: 3rem;
+    padding-top: 12rem;
+    height: 25rem;
+    width: 30rem;
+}
+.banner-title{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.banner-description{
+    margin: 1.5rem 0;
+}
+.fadebottom{
+    height: 100vh; 
+    background-image: linear-gradient(rgba(8, 8, 8, 0.048),rgb(0, 0, 0));
+}
+
+button{
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 0.4rem;
+    border: none;
+}
+button:hover {
+    background-color: black;
+    color: #e6e6e6;
+    transition: all 0.2s;
+}
+.icon{
+    margin: 0 0.4rem;
+    cursor: pointer;
+}
+.play{
+    background-color: white;
+}
+.more{
+    background-color: grey;
+    color: white;
+}

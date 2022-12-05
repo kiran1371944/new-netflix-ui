@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import bsUrl from '../bdomain'
+import bsUrl from '../../bdomain'
 import './Row.css';
 const base_url = "https://image.tmdb.org/t/p/original/";
   
@@ -25,7 +25,7 @@ function Row({title,fetch}) {
               
                 <div className='poster-div'>
                 <img className='poster'
-                  src={`${base_url}${movie.backdrop_path}`}
+                  src={`${base_url}${movie.backdrop_path} ` || `${base_url}${movie.poster_path}`}
                   alt={movie.name || movie.title} />
                     <div className='title'>
                     <h6>{movie.name || movie.title}</h6>
